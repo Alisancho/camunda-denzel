@@ -7,14 +7,14 @@ import org.telegram.telegrambots.meta.api.objects.Update;
 
 import java.util.Objects;
 
-public class VKBot extends TelegramLongPollingBot {
+public class TelegramBot extends TelegramLongPollingBot {
     private final String token;
     private final String name;
     private final Long chat_id;
 
-    public VKBot(@NotNull String token,
-                 @NotNull String name,
-                 @NotNull Long chat_id) {
+    public TelegramBot(@NotNull String token,
+                       @NotNull String name,
+                       @NotNull Long chat_id) {
         this.token = token;
         this.name = name;
         this.chat_id = chat_id;
